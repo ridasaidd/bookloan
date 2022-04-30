@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Book loan app built in React and Electron 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
