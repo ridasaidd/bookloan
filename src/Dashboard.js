@@ -1,28 +1,28 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import AccountCircle from '@mui/icons-material/AccountCircle';
 
 import Orders from './components/Orders';
 
 import Search from './components/Search';
 import Copyright from './components/CopyRight';
+import AuthenticationComponent from './components/Authentication';
 
 const mdTheme = createTheme();
 
 function DashboardContent() {
-    const handleLogin = (event) => {
-        console.log('handleLogin clicked => ', event.currentTarget);
+  useEffect(() => {
+    return () => {
     }
-
+  })
+  
   return (
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: 'flex' }}>
@@ -38,9 +38,7 @@ function DashboardContent() {
               Dashboard
             </Typography>
             <Search />
-            <IconButton color="inherit" onClick={handleLogin}>
-              <AccountCircle />
-            </IconButton>
+            <AuthenticationComponent />
           </Toolbar>
         </AppBar>
         <Box

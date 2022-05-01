@@ -59,17 +59,18 @@ function preventDefault(event) {
 }
 
 export default function Orders() {
+
   return (
     <React.Fragment>
       <Title>Recent Orders</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Dossnr</TableCell>
+            <TableCell>DOSSNR</TableCell>
             <TableCell>AVD</TableCell>
             <TableCell>RUM</TableCell>
             <TableCell>BOK</TableCell>
-            <TableCell>Bok ex.</TableCell>
+            <TableCell>EXEMPLAR</TableCell>
             <TableCell>DATUM UT</TableCell>
             <TableCell>DATUM IN</TableCell>
             <TableCell>STATUS</TableCell>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { Fragment } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 
 import InputBase from '@mui/material/InputBase';
@@ -49,11 +49,13 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 
 export default function SearchComponent () {
     return (
+      <Fragment>
         <Search sx={{ flexGrow: 1, margin: '0 20% !important' }}>
             <SearchIconWrapper>
                 <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase placeholder="Search…" sx={{ width: '100%' }} inputProps={{ 'aria-label': 'search' }} />
         </Search>
+      </Fragment>
     )
 }
